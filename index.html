@@ -6,7 +6,6 @@
   <title>1A NRG | Ihr Weg in die Energieunabhängigkeit</title>
   <meta name="description" content="Klar, praktisch und unabhängig: Der 1A NRG Leitfaden für Wärmepumpen, Photovoltaik, Balkonkraftwerke, Stromspeicher und Dämmung.">
 
-  <!-- Open Graph -->
   <meta property="og:title" content="1A NRG | Ihr Weg in die Energieunabhängigkeit">
   <meta property="og:description" content="Klar, praktisch und unabhängig: Der 1A NRG Leitfaden für Wärmepumpen, Photovoltaik, Balkonkraftwerke, Stromspeicher und Dämmung.">
   <meta property="og:type" content="website">
@@ -16,84 +15,231 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <a href="/">
+    <div class="container header-content">
+      <a href="/" class="logo-link">
         <img src="favicon.svg" alt="" class="logo-icon">
         1A NRG
       </a>
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a href="#loesungen">Lösungen</a>
+        <a href="#vergleich">Vergleich</a>
+        <a href="#rechner">Sparrechner</a>
+        <a href="#faq">FAQ</a>
+      </nav>
     </div>
   </header>
 
   <main>
-    <div class="container">
-      <h1>Energie fürs Zuhause, einfach erklärt</h1>
-      <p>Willkommen bei 1A NRG. Wir helfen Ihnen, die besten Entscheidungen für Ihre heimische Energieversorgung zu treffen. Unabhängig, werbefrei und auf den Punkt gebracht.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>Energie fürs Zuhause, einfach erklärt</h1>
+        <p>Willkommen bei 1A NRG. Wir helfen Ihnen, die besten Entscheidungen für Ihre heimische Energieversorgung zu treffen. Unabhängig, werbefrei und auf den Punkt gebracht. Entdecken Sie Ihr Potenzial für saubere Energie und sinkende Kosten.</p>
+        <a href="#rechner" class="btn-primary">Zum Solar-Sparrechner</a>
+      </div>
+    </section>
 
-      <section class="card" aria-labelledby="solar-heading">
-        <h2 id="solar-heading">Dach-Solaranlagen (Photovoltaik)</h2>
-        <p>Eine eigene Photovoltaik-Anlage auf dem Dach ist oft der erste Schritt in die Energieunabhängigkeit. Sie wandelt Sonnenlicht direkt in Strom um, den Sie im Haushalt nutzen können. Der überschüssige Strom wird gegen eine Vergütung in das öffentliche Netz eingespeist.</p>
-        <p>Die Investition lohnt sich meist schon nach 10 bis 15 Jahren, abhängig von der Größe der Anlage, den Anschaffungskosten und Ihrem eigenen Stromverbrauch. Wichtig ist eine gute Planung, die Ausrichtung des Daches (Süden ist optimal, aber auch Ost-West-Dächer liefern gute Erträge) und die Vermeidung von Verschattungen.</p>
+    <!-- Solutions Cards -->
+    <section id="loesungen" class="section">
+      <div class="container">
+        <h2>Bausteine der Energiewende</h2>
+        <p>Egal, ob Sie Hausbesitzer oder Mieter sind – es gibt für fast jede Wohnsituation die passende Lösung, um Energiekosten zu senken und das Klima zu schonen. Hier sind die wichtigsten Technologien im Überblick.</p>
 
-        <div class="estimator">
-          <h3>Solar-Sparrechner</h3>
-          <p>Schätzen Sie Ihr Potenzial ein. Die Berechnung erfolgt komplett in Ihrem Browser – keine Daten werden übertragen.</p>
-          <form id="estimator-form">
+        <div class="cards-grid">
+
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="9" y1="3" x2="9" y2="21"></line>
+              <line x1="15" y1="3" x2="15" y2="21"></line>
+              <line x1="3" y1="9" x2="21" y2="9"></line>
+              <line x1="3" y1="15" x2="21" y2="15"></line>
+            </svg>
+            <h3>Photovoltaik (PV)</h3>
+            <p>Eine PV-Anlage auf dem Dach wandelt Sonnenlicht direkt in Strom um. Den erzeugten Strom nutzen Sie selbst, der Überschuss wird gegen eine Vergütung ins Netz eingespeist. Besonders lohnenswert bei einem hohen Eigenverbrauch (z. B. durch E-Auto oder Wärmepumpe). Die Süd-Ausrichtung ist ideal, aber auch Ost-West-Dächer liefern über den Tag verteilt sehr gute Erträge.</p>
+          </div>
+
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+            <h3>Balkonkraftwerk</h3>
+            <p>Die Mini-PV-Anlage für Mieter und Wohnungseigentümer. Diese kompakten Systeme bestehen meist aus ein oder zwei Solarmodulen, die am Balkongeländer, auf dem Garagendach oder im Garten platziert werden. Sie werden einfach über eine Schuko- oder Wieland-Steckdose mit dem Hausnetz verbunden und decken direkt die Grundlast (wie Router und Kühlschrank) Ihrer Wohnung ab.</p>
+          </div>
+
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"></path>
+            </svg>
+            <h3>Wärmepumpe</h3>
+            <p>Das Heizsystem der Zukunft nutzt Umweltwärme aus Luft, Erde oder Grundwasser und verdichtet diese mittels Strom, um das Haus zu heizen. Aus 1 kWh Strom werden so im Schnitt 3 bis 4 kWh Wärme. Wärmepumpen arbeiten am effizientesten mit Flächenheizungen (Fußbodenheizung), können aber bei ausreichender Dimensionierung der Heizkörper auch in Altbauten wirtschaftlich betrieben werden.</p>
+          </div>
+
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="10" rx="2" ry="2"></rect>
+              <line x1="22" y1="11" x2="22" y2="13"></line>
+              <line x1="6" y1="12" x2="6" y2="12"></line>
+              <line x1="10" y1="12" x2="10" y2="12"></line>
+              <line x1="14" y1="12" x2="14" y2="12"></line>
+            </svg>
+            <h3>Stromspeicher</h3>
+            <p>Heimbatterien speichern den ungenutzten Solarstrom vom Tag für die Abend- und Nachtstunden. So steigern Sie Ihre Unabhängigkeit vom Netzbetreiber und erhöhen Ihren Eigenverbrauch auf bis zu 70-80%. Die Preise für Lithium-Eisenphosphat-Speicher (LiFePO4) sind stark gesunken, was sie zunehmend wirtschaftlicher macht.</p>
+          </div>
+
+          <div class="card">
+            <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <h3>Wärmedämmung</h3>
+            <p>Die beste Energie ist die, die gar nicht erst benötigt wird. Eine moderne Dämmung von Fassade, Dach oder Kellerdecke und mehrfach verglaste Fenster senken den Heizbedarf drastisch. Dies ist oft der wichtigste erste Schritt der energetischen Sanierung, da er den Einsatz einer kleineren, günstigeren Wärmepumpe ermöglicht.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="vergleich" class="section section-alt">
+      <div class="container">
+        <h2>Systemvergleich</h2>
+        <p>Verschaffen Sie sich einen schnellen Überblick über die typischen Kosten, Amortisationszeiten sowie die Vor- und Nachteile der verschiedenen Technologien. Bitte beachten Sie: Die genannten Werte sind Durchschnittswerte; die realen Kosten hängen stark von den individuellen Gegebenheiten ab.</p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Technologie</th>
+                <th>Typ. Investition</th>
+                <th>Amortisation (ca.)</th>
+                <th>Vorteile</th>
+                <th>Nachteile</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>PV-Anlage (Dach)</strong></td>
+                <td>8.000 - 20.000 €</td>
+                <td>10 - 15 Jahre</td>
+                <td>Hohe Erträge, Einspeisevergütung, lange Lebensdauer (25+ J.)</td>
+                <td>Hohe Initialkosten, Montageaufwand, erfordert intaktes Dach</td>
+              </tr>
+              <tr>
+                <td><strong>Balkonkraftwerk</strong></td>
+                <td>300 - 800 €</td>
+                <td>3 - 6 Jahre</td>
+                <td>Sehr günstig, einfache Selbstmontage, für Mieter geeignet</td>
+                <td>Geringere Leistung (max. 800W), keine Vergütung für Überschuss</td>
+              </tr>
+              <tr>
+                <td><strong>Wärmepumpe</strong></td>
+                <td>20.000 - 35.000 €*</td>
+                <td>12 - 18 Jahre</td>
+                <td>Klimafreundlich, zukunftssicher, kühlt im Sommer (optional)</td>
+                <td>*Vor Abzug hoher Förderungen. Teuer in der Anschaffung, Platzbedarf für Außeneinheit</td>
+              </tr>
+              <tr>
+                <td><strong>Stromspeicher</strong></td>
+                <td>4.000 - 10.000 €</td>
+                <td>10 - 15 Jahre</td>
+                <td>Maximiert Eigenverbrauch, Notstromfunktion (modellabhängig)</td>
+                <td>Rendite oft knapp kalkuliert (Lebensdauer der Zellen)</td>
+              </tr>
+              <tr>
+                <td><strong>Wärmedämmung</strong></td>
+                <td>10.000 - 40.000 €</td>
+                <td>15 - 25 Jahre</td>
+                <td>Senkt sofort den Verbrauch, steigert Wohnkomfort und Immobilienwert</td>
+                <td>Sehr aufwendige Baumaßnahme, lange Amortisationszeit rein finanziell</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estimator Form Section -->
+    <section id="rechner" class="section">
+      <div class="container-sm">
+        <div class="estimator-wrapper">
+          <h2>Solar-Sparrechner</h2>
+          <p>Finden Sie heraus, wie viel Sie mit einer Dach-Solaranlage sparen könnten. Alle Berechnungen finden direkt in Ihrem Browser statt – Ihre Daten sind sicher.</p>
+
+          <form id="estimator-form" novalidate>
             <div class="estimator-grid">
               <div class="form-group">
-                <label for="roof-size">Nutzbare Dachfläche (in m²):</label>
-                <input type="number" id="roof-size" min="10" step="1" required placeholder="z.B. 50">
+                <label for="roof-size">Nutzbare Dachfläche (m²):</label>
+                <input type="number" id="roof-size" min="10" step="1" required placeholder="z. B. 50">
               </div>
               <div class="form-group">
-                <label for="consumption">Jährlicher Stromverbrauch (in kWh):</label>
-                <input type="number" id="consumption" min="1000" step="100" required placeholder="z.B. 4000">
+                <label for="consumption">Jährlicher Stromverbrauch (kWh):</label>
+                <input type="number" id="consumption" min="1000" step="100" required placeholder="z. B. 4000">
               </div>
             </div>
             <div class="form-group">
-              <label for="region">Ihre Region (für Sonnenstunden):</label>
+              <label for="region">Ihre Region (beeinflusst Sonnenstunden):</label>
               <select id="region" required>
                 <option value="nord">Norddeutschland</option>
                 <option value="mitte" selected>Mitteldeutschland</option>
                 <option value="sued">Süddeutschland</option>
               </select>
             </div>
-            <button type="submit">Ersparnis berechnen</button>
+            <button type="submit" class="btn-primary btn-submit">Potenzial berechnen</button>
           </form>
 
           <div id="estimator-result" class="result" aria-live="polite">
-            <h4>Geschätzte jährliche Ersparnis:</h4>
-            <div id="savings-value" class="result-value">0,00 €</div>
+            <h3>Ihre geschätzten Ergebnisse</h3>
+            <div class="result-grid">
+              <div class="result-item">
+                <span class="label">Erzeugung / Jahr</span>
+                <span class="value" id="res-generation">0 kWh</span>
+              </div>
+              <div class="result-item">
+                <span class="label">Ersparnis / Jahr</span>
+                <span class="value" id="res-savings">0 €</span>
+              </div>
+              <div class="result-item">
+                <span class="label">Amortisation</span>
+                <span class="value" id="res-payback">0 Jahre</span>
+              </div>
+              <div class="result-item">
+                <span class="label">CO₂ gespart / Jahr</span>
+                <span class="value" id="res-co2">0 kg</span>
+              </div>
+            </div>
             <div class="assumptions">
-              <strong>Annahmen:</strong> 5 m² pro kWp Anlagenleistung. Eigenverbrauch ca. 30% des erzeugten Stroms (ohne Speicher). Strompreis 35 ct/kWh, Einspeisevergütung 8 ct/kWh. Dies ist eine vereinfachte Schätzung und ersetzt keine professionelle Planung.
+              <strong>Annahmen:</strong> 5 m² benötigte Fläche pro kWp Anlagenleistung. Anlagenkosten von 1.500 € pro kWp. Eigenverbrauch von max. 30 % des erzeugten Stroms (ohne Batteriespeicher). Angenommener Strompreis 35 ct/kWh, Einspeisevergütung 8 ct/kWh. CO₂-Einsparung basiert auf einem durchschnittlichen Strommix von 400 g/kWh. Diese Werte sind grobe Richtwerte und ersetzen keine fachmännische Planung.
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="card" aria-labelledby="bkw-heading">
-        <h2 id="bkw-heading">Balkonkraftwerke (Mini-PV)</h2>
-        <p>Sie haben kein eigenes Dach? Kein Problem. Balkonkraftwerke (auch Stecker-Solargeräte genannt) sind die perfekte Lösung für Mieter und Wohnungseigentümer. Es handelt sich um kleine Photovoltaik-Systeme, meist bestehend aus ein oder zwei Modulen, die direkt über eine normale Steckdose an das Hausnetz angeschlossen werden.</p>
-        <p>Aktuell dürfen solche Anlagen in Deutschland mit einer Wechselrichterleistung von bis zu 800 Watt betrieben werden. Der erzeugte Strom fließt direkt in Ihre Wohnung und versorgt Grundlast-Geräte wie den Kühlschrank oder den Router- das senkt die Stromrechnung spürbar, ohne große Investitionen.</p>
-      </section>
+    <!-- FAQ Section -->
+    <section id="faq" class="section section-alt">
+      <div class="container">
+        <h2>Häufig gestellte Fragen (FAQ)</h2>
 
-      <section class="card" aria-labelledby="wp-heading">
-        <h2 id="wp-heading">Wärmepumpen</h2>
-        <p>Die Wärmepumpe ist das Heizsystem der Zukunft. Sie entzieht der Umgebung (Luft, Erde oder Wasser) Wärme und hebt diese mittels elektrischer Energie auf ein höheres Temperaturniveau, um das Haus zu heizen und Warmwasser bereitzustellen.</p>
-        <p>Besonders effizient sind Wärmepumpen in Kombination mit einer Fußbodenheizung (Flächenheizung), da hier niedrige Vorlauftemperaturen ausreichen. Aber auch in un- oder teil-sanierten Altbauten mit Heizkörpern können moderne Wärmepumpen effizient arbeiten. In Verbindung mit einer eigenen PV-Anlage heizen Sie im Idealfall zeitweise fast kostenlos und emissionsfrei.</p>
-      </section>
+        <div class="faq-item">
+          <h3>Gilt für Balkonkraftwerke die neue 800-Watt-Grenze?</h3>
+          <p>Ja, in Deutschland wurde die Bagatellgrenze für Stecker-Solargeräte kürzlich angehoben. Wechselrichter dürfen nun bis zu 800 Watt Leistung (statt ehemals 600 Watt) ins Hausnetz einspeisen. Die Modulleistung (die auf dem Dach oder Balkon liegt) darf dabei bis zu 2.000 Watt Peak (Wp) betragen. Die Anmeldung im Marktstammdatenregister wurde zudem stark vereinfacht, und eine Anmeldung beim lokalen Netzbetreiber entfällt meist.</p>
+        </div>
 
-      <section class="card" aria-labelledby="speicher-heading">
-        <h2 id="speicher-heading">Stromspeicher (Heimbatterien)</h2>
-        <p>Ein Stromspeicher erhöht den Eigenverbrauchsanteil Ihrer Photovoltaik-Anlage deutlich. Der tagsüber produzierte Sonnenstrom, der nicht sofort verbraucht wird, lädt die Batterie auf. Abends und nachts, wenn die Sonne nicht scheint, können Sie diesen gespeicherten Strom nutzen.</p>
-        <p>Ob sich ein Speicher finanziell lohnt, hängt stark von den Anschaffungskosten pro Kilowattstunde (kWh) Speicherkapazität und dem Unterschied zwischen Ihrem Bezugsstrompreis und der Einspeisevergütung ab. Aktuell sinken die Preise für Speicher jedoch stetig, was sie immer attraktiver macht.</p>
-      </section>
+        <div class="faq-item">
+          <h3>Bekomme ich noch eine Einspeisevergütung für PV-Strom?</h3>
+          <p>Ja, das Erneuerbare-Energien-Gesetz (EEG) sichert weiterhin eine feste Einspeisevergütung über 20 Jahre zu. Aktuell (Stand 2024) liegt diese für Anlagen bis 10 kWp bei Überschusseinspeisung bei ca. 8,1 Cent pro kWh. Für sogenannte Volleinspeiser-Anlagen (die den kompletten Strom ins Netz abgeben) sind die Sätze deutlich höher, was sich jedoch für Einfamilienhäuser mit Eigenbedarf selten rechnet. Da der eingekaufte Netzstrom meist über 30 Cent/kWh kostet, ist der Eigenverbrauch finanziell am attraktivsten.</p>
+        </div>
 
-      <section class="card" aria-labelledby="daemmung-heading">
-        <h2 id="daemmung-heading">Wärmedämmung</h2>
-        <p>Bevor man in teure, groß dimensionierte Heizungstechnik investiert, sollte der Energiebedarf des Hauses geprüft werden. Die beste Energie ist die, die gar nicht erst benötigt wird. Eine gute Wärmedämmung von Fassade, Dach oder Kellerdecke reduziert die Wärmeverluste drastisch.</p>
-        <p>Auch der Austausch alter Fenster gegen moderne, mehrfach verglaste Modelle bringt oft schnelle und spürbare Verbesserungen. Eine gut gedämmte Gebäudehülle ist zudem die ideale Voraussetzung für den effizienten Betrieb einer Wärmepumpe, da diese dann kleiner dimensioniert werden kann und weniger Strom verbraucht.</p>
-      </section>
-    </div>
+        <div class="faq-item">
+          <h3>Gibt es Förderungen für Wärmepumpen und Sanierungen?</h3>
+          <p>Der Staat fördert den Umstieg auf erneuerbare Energien massiv, um die Klimaziele zu erreichen. Über die Bundesförderung für effiziente Gebäude (BEG), abgewickelt durch die KfW (Kreditanstalt für Wiederaufbau) und das BAFA (Bundesamt für Wirtschaft und Ausfuhrkontrolle), können Sie Zuschüsse erhalten. Für den Einbau einer Wärmepumpe sind bis zu 70 % Förderung möglich (bestehend aus Grundförderung, Klimageschwindigkeits-Bonus, Einkommens-Bonus und Effizienz-Bonus). Auch für Dämmmaßnahmen gibt es Zuschüsse von mindestens 15 %. <strong>Wichtig:</strong> Der Förderantrag muss immer <em>vor</em> der Beauftragung des Handwerkers gestellt werden!</p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
@@ -102,7 +248,7 @@
         <a href="/impressum.html">Impressum</a>
         <a href="/datenschutz.html">Datenschutz</a>
       </nav>
-      <p style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.875rem;">&copy; 2024 1A NRG. Alle Rechte vorbehalten.</p>
+      <p style="margin-top: 1rem; color: var(--color-text-muted); font-size: 0.875rem;">&copy; 2026 1A NRG. Alle Rechte vorbehalten.</p>
     </div>
   </footer>
 
